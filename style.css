@@ -1,168 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
+margin: 0;
+padding: 0;
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+overflow: hidden;
+box-sizing: border-box;
 }
+body{
+width: 100%;
+height: 100vh;
+background: url(/Images/body-bg.jpg) no-repeat center;
+background-size: cover;
+}
+
 /* -------------  Nav Bar ------------------*/
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 35px 10px ;
-    width: 90%;
-    height: 50px;
-    border-bottom:1px solid gray ;
-    position: sticky;
+header{
+width: 99.1%;
+height: 110px;
+
+margin: 2px;
+
+}
+.navbar{
+width: 100%;
+height: 100px;
+position: relative;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 .logo{
-flex-basis: 30%;
+flex-basis: 20%;
+height: 90px;
 }
-.logo>img{
-    width: 200px;
-    height: 250px;
-    
+.logo>h1{
+color: gray;
+font-weight: 600;
+font-size: 50px;
+text-shadow: 1px 0px 1px black;
+margin: 10px 0 10px 20px;
 }
-header>nav>li{
-    list-style: none    ;
-    text-decoration: none;
-    flex-basis: 60%;
-    
+.logo>h1>span{
+color: rgb(32, 87, 32);
 }
+.nav-links{
+flex-basis: 55%;
 
-header>nav>li>a{
-    text-decoration: none;
-    padding:0 10px;
-    font-size: 1.5rem;
-    color: gray;
-    transition: 0.2s;
+height: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-header>nav>li>a:hover{
-color:rgb(104, 97, 97) ;
+.nav-links>li{
+list-style: none;
+}
+.nav-links>li>a{
+text-decoration: none;
+color: gray;
+font-size: 28px;
+margin:0 15px ;
 font-weight: 600;
 }
-.button{
-    
-    height: 50px;
-      background:#1F5D3F;
-  padding: 10px 10px;
-    border: 1px solid #1F5D3F;
-    font-size: 1.1rem;
-    font-weight: 550; 
-    border-radius:10px;
-    color: white;
-    flex-basis: 15%;
-    margin-bottom: 10px;
-
-    
+.nav-btn{
+flex-basis: 15%;
+height: 90px;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
 }
-.button:hover{
-    background:#1F5D3F;
+.btn-1{
+border: 2px solid transparent;
+border-radius:20px ;
+text-shadow: 1px 1px 12px rgb(61, 57, 57);
+color:  rgb(32, 87, 32);
+padding: 10px;
+font-size: 35px;
+transition: 1s;
+cursor: pointer;
+}
+.btn-1:hover{
+border: 2px solid rgb(32, 87, 32);
+}
+/*--------------------Home-----------------*/
+.home{
+width: 99%;
+
+margin: 2px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.home-content{
+flex-basis: 50%;
+height: 96%;
+margin: 2px;
+padding: 60px;
+}
+.home-content>h1{
+color: rgb(20, 18, 18);
+font-size: 55px;
+font-weight: 500;
+}
+.home-content>h3{
+color: rgb(71, 69, 69);
+font-size: 40px;
 }
 
-
-                                /*----------Home------------*/
-/*----Carosoule--------------*/
-.carousel-inner {
-    height: 250px;
-    margin-top: 10px;
+.btn-2{ 
+color:  rgb(32, 87, 32);
+border: 2px solid rgb(32, 87, 32);
+width: 240px;
+border-radius: 3px;
+padding: 10px;
+font-size: 30px;
+transition: 1s;
+cursor: pointer;
 }
-.d-block {
-    height: 300px;
-    
+.btn-2:hover{
+background: rgb(32, 87, 32);
+color: #F3F3F5;
 }
-
-/*-----NOTE------*/
-.note{
-    width: 100%;
-    height: 33px;
-    background: #1d754b9c;
-    margin: 10px auto;    
+.doctor-registrationform{
+    flex-basis: 45%;
+    height: 96%;
+  
+    margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    }
+.registration-form{
+    width: 300px;
+    height: 500px;
 }
-.note>h3{
-    font-size: 17px;
+.registration-form>form{
+    border: 1px solid #1281c2;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    padding: 20px;
+    background-color: #1281c2;
 }
-.note>h3>span{
-    font-weight: bold;
+.registration-form>form>h1{
+font-size: 22px;
+color: white;
 }
-/*-------Doctor----------*/
-.doctor{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.doctor-image{
-    margin:0 10px;
-} 
-.doctor-image>img{
-  width: 290px;
-  height: 290px;
-  clip-path: circle(51.1% at 51% 51%);
-}
-.doctor-content{
-    margin:0 10px;
-}
-.doctor-content>h1{
-    font-size: 45px;
-}.doctor-content>p{
-    font-size: 20px;
+.registration-form>form>h5{
+    font-size: 18px;
     font-weight: normal;
 }
-
-.doc-btn{
-    width: 200px;
-    margin-left: 10px;
+.registration-form>form>label{
+    color: white;
 }
-/*-----------Clinic------------*/
-.clinic{
-    width: 90%;
-    height: 50vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0  50px;
+.form-btn{
+  
+    width: 100px;
+    font-size: 20px;
+    color: #F3F3F5;
+    background: rgb(32, 87, 32);
+    border: 1px solid  rgb(32, 87, 32);
+    font-weight: 400;
+    padding: 0 10px;
+    border-radius:10px ;
+    transition: 1s;
 }
-/*--------- Responsiveness ---------*/
+.form-btn:hover{
+    background: transparent;
+    color:  rgb(32, 87, 32);
 
+}
+
+            /* ResponsiveNEss */
 @media (max-width:700px){
-    /*---- nav-bar----------------*/
-    nav{
-        width: 94%;
-        margin: 10px 20px  0 30px;
-    }
-    .logo{
-        flex-basis: 50%;
-    }
-    .logo>img{
-        width: 300px;
-        height: 300px;
-        
-    }
-    
-    header>nav>li>a{
-       display: none;
-    }   
-    .button{
-     
-       padding: 0px  10px;
-       font-size: 1rem;
-       margin-bottom: 10px;
-       flex-basis: 50%;
-    }
-/*--------- Carasoul ----------*/
-.carousel-inner{
- height: 350px;   
+/* ---------------navbar -------------------*/
+.nav-links>li{
+display: none;
+
 }
-.d-block {
-    height: 400px;
-    
+.logo{
+flex-basis: 40%;
+}
+.nav-links{
+flex-basis: 0;
+}
+.nav-btn{
+flex-basis: 30%;
 }
 }
-/*---Animation---*/
